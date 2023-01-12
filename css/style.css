@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    font-family:sans-serif;
+    background-color: #22A39F;
+}
+
+header{
+    width: 100%;
+    background-color:#434242;
+}
+
+.footer{
+    text-align: center;
+    padding:20px;
+    background-color:cyan
+
+}
+
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    flex-grow: 1;
+    text-align: center;
+    border-radius: 5px;
+    border-right: 1px solid #fff;
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+
+}
+
+#titulo {
+    background-color: #F3EFE0;
+    color:blue;
+    border-radius: 5px;
+    border-width: 5px;
+    text-align: center;
+}
+
+.titulo1 {
+    text-align: center; 
+}
+
+.siguenos {
+    text-align: center;
+}
+
+.video {
+    text-align: center;
+}
+
+.caja {
+    border: 1px solid #222222;
+    background-color: #F3EFE0;
+    color:black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 450px;
+    line-height: 20px;
+    text-align: center;
+    margin: 5px;
+}
+
+.flexbox {
+    border: black;
+    background-color:#ccc;
+    padding: 20px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+.img1 {
+    width: 100%;
+}
+
+.img2 {
+    width: 100%;
+}
+
+.img3 {
+    width: 100%;
+}
+
+.flexbox2 {
+    border: black;
+    background-color:#ccc;
+    padding: 20px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px;
+}
+
+.galeria1 {
+    width: 600px;
+}
+
+/*Pagina de cotacto*/
+
+.container_form{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 90px;
+}
+
+.formulario{
+    padding: 25px;
+    padding-left: 0;
+}
+
+.container_form h2{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.campo, textarea {
+    padding: 15px 10 px;
+    font-size: 15px;
+    display: inline-block;
+    text-decoration: double;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 3px;
+    outline: 0px;
+    color: #222222;
+}
+
+.enviar{
+    padding: 15px;
+    font-size: 16px;
+    background-color:#434242;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.mapa{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
