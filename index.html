@@ -1,77 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Link CDN Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!--Link CSS-->
     <link rel="stylesheet" href="./css/style.css">
+
     <title>Kancer Custom</title>
-
 </head>
-
-<p>hola mundo</p>
 
 <body>
 
-    <h1 id="titulo">Bienvenidos a KANCER CUSTOM </h1>
+    <!--Boton de despliegue menu y busqueda-->
 
-    <header class="header">
-        <nav class="menu">
-            <ul>
-                <li>
-                    <a href="./index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./pages/galeria.html">Galeria de trabajos</a>
-                </li>
-                <li>
-                    <a href="./pages/info.html">Información</a>
-                </li>
-                <li>
-                    <a href="./pages/contacto.html">Contacto</a>
-                </li>
-                <li>
-                    <a href="./pages/ubicanos.html">Ubicanos</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/logo.PNG" width="60px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-<main id="main" class="main">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/info.html">Informacion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/ubicanos.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+                    </li>
+                    <!--Botones de redes sociales-->
+                    <li class="nav-item">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </li>
+                </ul>
+            </div>
 
-    <section class="titulo1">
-        <div>
-            <h1>Nos especializamos en llevar tus ideas de diseño a tu control</h1>
+            <form class="d-flex">
+                <input type="search" class="form-control me-3" placeholder="Buscar producto ...">
+                <button type="button" class="btn btn-success">Buscar</button>
+            </form>
+
         </div>
-    </section>   
+    </nav>
 
-    <section class="video">
-        <video width="1300" height="500" autoplay muted playsinline>
-            <source src="./assets/KancerCustom.mp4" type="video/mp4">
-        </video>
-    </section>
+    <div class="container">
+        <div class="ratio ratio-21x9">
+            <iframe src="./assets/KancerCustom.mp4" title="video" allowfullscreen></iframe>
+        </div>
+    </div>
 
     <section>
         <div>
-            <article id="fondo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum repellendus, vitae impedit perferendis fugiat eveniet inventore, nulla accusamus autem assumenda placeat amet? Repudiandae sit molestias vitae odio incidunt tempore excepturi.
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id odit corrupti blanditiis ab rem labore officia praesentium nesciunt aut, dolores laboriosam nihil error adipisci obcaecati consequuntur, repellat provident sapiente nostrum.
-            <br>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa laboriosam rem commodi nulla fugiat modi dolor aperiam nobis est perferendis esse eius porro, eaque animi autem, earum reiciendis minima nesciunt.
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus nisi eaque repellat quo dolorum velit totam nam. Provident inventore tempore expedita ipsa sequi illum qui praesentium quam, ipsum, dignissimos consequuntur.
+            <article id="fondo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum repellendus, vitae
+                impedit perferendis fugiat eveniet inventore, nulla accusamus autem assumenda placeat amet?
+                Repudiandae sit molestias vitae odio incidunt tempore excepturi.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id odit corrupti blanditiis ab rem labore
+                officia praesentium nesciunt aut, dolores laboriosam nihil error adipisci obcaecati consequuntur,
+                repellat provident sapiente nostrum.
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa laboriosam rem commodi nulla fugiat
+                modi dolor aperiam nobis est perferendis esse eius porro, eaque animi autem, earum reiciendis minima
+                nesciunt.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus nisi eaque repellat quo dolorum
+                velit totam nam. Provident inventore tempore expedita ipsa sequi illum qui praesentium quam, ipsum,
+                dignissimos consequuntur.
             </article>
         </div>
     </section>
 
-        <footer class="footer">
-            <div class="contenedor">
-                <h3>¡SIGUENOS!</h3>
-                <a target="_blank" href="https://www.facebook.com/kancer.custom/">Facebook</a>
-                <a target="_blank" href="https://www.instagram.com/kancer.custom/">Instagram</a>
-                <a target="_blank" href="https://twitter.com/kancer_custom">Twitter</a>
-            </div>
-        </footer>
+    <footer class="footer">
+        <div class="contenedor">
+            <h3>¡SIGUENOS!</h3>
+            <a target="_blank" href="https://www.facebook.com/kancer.custom/">Facebook</a>
+            <a target="_blank" href="https://www.instagram.com/kancer.custom/">Instagram</a>
+            <a target="_blank" href="https://twitter.com/kancer_custom">Twitter</a>
+        </div>
+    </footer>
+    </main>
 
-</main>
+    <!--Link de scrip de Bootstrap-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <!--Link de scrip de font awesome-->
+
+    <script src="https://kit.fontawesome.com/4357bc7989.js" crossorigin="anonymous"></script>
 
 </body>
 
