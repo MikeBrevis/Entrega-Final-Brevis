@@ -10,39 +10,51 @@
 /*Fondo de color .index*/
 body{
     font-family:sans-serif;
-    background-color:darkslateblue;
+    background-color:rgb(101, 77, 255);
 }
 
-/*estilos barra de navegación*/
-nav{
-    background-color: #bb2e2e;
-    height: 70px;
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>estilos barra de navegación*/
+.container-fluid{
+    background-color: #07398a;
+    height: 60px;
     width: 100%;
 }
 
-nav ul li a{
+nav ul li a:hover{
     
     border-radius: 3px;
-    text-transform: uppercase;  
+    text-transform: uppercase;
+    background-color:rgb(255, 255, 255);
+    transition: 1s;
 }
 
-li a:hover {
-    background-color:#3a3939;
-    transition: .5s; 
-
+.nav-link{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
 }
 
 /*Botones de menu desplegable*/
 .nav-item {
-    margin-left:60px;
+    margin-left:40px;
     font-size: 18px;
+    
+    
 }
 
 /*Botones redes sociales*/
 i {
-    color: #851818;
+    color: rgb(255, 255, 255);
     font-size: 30px;
 }
+
+/*Propiedades de video*/
+div iframe{
+    padding: 20px;
+
+
+}
+
+
 
 /*arreglar lo de abajo*/
 
