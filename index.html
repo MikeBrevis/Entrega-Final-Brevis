@@ -13,13 +13,20 @@
     <!--Link CSS-->
     <link rel="stylesheet" href="./css/style.css">
     <title>Kancer Custom</title>
+
+    <!--Link font-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    </style>
+
+
 </head>
 
 <body>
     <header> <!--Comienzo barra de navegación-->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand navbar-custom" href="#">
                     <img src="assets/logo.PNG" width="60px">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -34,42 +41,23 @@
                             <a class="nav-link" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/pages/galeria.html">Galeria</a>
+                            <a class="nav-link" href="./pages/galeria.html">Galeria</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/pages/info.html">Informacion</a>
+                            <a class="nav-link" href="./pages/info.html">Informacion</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/pages/ubicanos.html">Tienda</a>
+                            <a class="nav-link" href="./pages/ubicanos.html">Tienda</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
                         </li>
 
                         <!--Botones de redes sociales-->
-
-                        <li class="nav-item">
-                            <a target="_blank" href="https://www.facebook.com/kancer.custom/">
-                                <i class="fa-brands fa-facebook-f"></i>
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a target="_blank" href="https://www.instagram.com/kancer.custom/">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a target="_blank" href="https://twitter.com/kancer_custom">
-                                <i class="fa-brands fa-twitter"></i>
-                            </a>
-                        </li>
-                    </ul>
                 </div>
 
                 <!--Boton de busqueda-->
-                <form class="d-flex">
+                <form class="d-flex searchbutton">
                     <input type="search" class="form-control me-3" placeholder="Buscar producto ...">
                     <button type="button" class="btn btn-success">Buscar</button>
                 </form>
@@ -95,7 +83,7 @@
 
             <div class="col">
                 <div class="card text-bg-dark mb-3" style="max-width: 18rem;">
-                    <img src="/assets/samus.jpg" class="card-img-top" alt="...">
+                    <img src="./assets/samus.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <p class="card-text">Customizacion personalizada de controles y consolas.<br>!Personalizalo como
                             quieras¡</p>
@@ -105,7 +93,7 @@
 
             <div class="col">
                 <div class="card text-bg-dark mb-3" style="max-width: 18.5rem;">
-                    <img src="/assets/Picoboot.PNG" class="card-img-top" alt="...">
+                    <img src="./assets/Picoboot.PNG" class="card-img-top" alt="...">
                     <div class="card-body">
                         <p class="card-text">-Liberacion de consolas<br>Juega el cotalogo completo de tu consola
                             favorita!</p>
@@ -115,28 +103,49 @@
 
             <div class="col">
                 <div class="card text-bg-dark mb-3" style="max-width: 24rem;">
-                    <img src="/assets/Mantencion.PNG" class="card-img-top" alt="...">
+                    <img src="./assets/Mantencion.PNG" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <p class="card-text"> Reparacion y mantención de consola y accesorios <br> Dejamos tu consola y
-                            accesorios como el primer dia de uso!</p>
+                        <p class="card-text"> Reparacion y mantención de consola y accesorios <br> Los dejamos como el
+                            primer dia de uso!</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-        <!--Footer de pagina -->
+    <!--Footer de pagina -->
+
     <div class="card text-center">
         <div class="card-header">
-            Featured
+            ¿Tienes alguna pregunta?
         </div>
-        <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="card-body footer-card">
+            <p class="card-text question-text">Para todas tus dudas o consultas, rellena el formulario</p>
+            <a href="./pages/contacto.html" class="btn btn-primary button-contact">CONTACTO</a>
         </div>
-        <div class="card-footer text-muted">
-            2 days ago
+
+
+        <!--Red social icons -->
+
+        <div class="card-footer text-muted socialmedia">
+            <li class="nav-item">
+                <a target="_blank" href="https://www.facebook.com/kancer.custom/">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a target="_blank" href="https://www.instagram.com/kancer.custom/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a target="_blank" href="https://twitter.com/kancer_custom">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+
         </div>
     </div>
 
