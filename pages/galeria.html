@@ -1,37 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Link CDN Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!--Link CSS-->
     <link rel="stylesheet" href="../css/style.css">
-    <title>Galeria</title>
+    <title>Kancer Custom</title>
+
+    <!--Link font-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    </style>
 </head>
+
 <body>
+    <header> <!--Comienzo barra de navegación-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand navbar-custom" href="#">
+                    <img src="../assets/logo.PNG" width="60px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-    <h1 id="titulo">Galeria de trabajos</h1>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/info.html">Informacion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/ubicanos.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
 
-    <header class="header">
-        <nav class="menu">
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="../pages/galeria.html">Galeria de trabajos</a>
-                </li>
-                <li>
-                    <a href="../pages/info.html">Información</a>
-                </li>
-                <li>
-                    <a href="../pages/contacto.html">Contacto</a>
-                </li>
-                <li>
-                    <a href="../pages/ubicanos.html">Ubicanos</a>
-                </li>
-            </ul>
+                        <!--Botones de redes sociales-->
+                </div>
+
+                <!--Boton de busqueda-->
+                <form class="d-flex searchbutton">
+                    <input type="search" class="form-control me-3" placeholder="Buscar producto ...">
+                    <button type="button" class="btn btn-success">Buscar</button>
+                </form>
+            </div>
         </nav>
     </header>
+    <!--Fin barra de navegación-->
+
 
     <section class="flexbox2">
         <div class="gal1">
@@ -59,18 +91,52 @@
             imagen 5
         </div>
     </section>
-
     <hr>
 
-    <footer class="footer">
-        <div class="contenedor">
-            <h3>¡SIGUENOS!</h3>
-            <a target="_blank" href="https://www.facebook.com/kancer.custom/">Facebook</a>
-            <a target="_blank" href="https://www.instagram.com/kancer.custom/">Instagram</a>
-            <a target="_blank" href="https://twitter.com/kancer_custom">Twitter</a>
+    <div class="card text-center">
+        <div class="card-header">
+            ¿Tienes alguna pregunta?
         </div>
-    </footer>
+        <div class="card-body footer-card">
+            <p class="card-text question-text">Para todas tus dudas o consultas, rellena el formulario</p>
+            <a href="../pages/contacto.html" class="btn btn-primary button-contact">CONTACTO</a>
+        </div>
+
+
+        <!--Red social icons -->
+
+        <div class="card-footer text-muted socialmedia">
+            <li class="nav-item">
+                <a target="_blank" href="https://www.facebook.com/kancer.custom/">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a target="_blank" href="https://www.instagram.com/kancer.custom/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a target="_blank" href="https://twitter.com/kancer_custom">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+
+        </div>
+    </div>
+
+
+    <!--Link de scrip de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <!--Link de scrip de font awesome-->
+    <script src="https://kit.fontawesome.com/4357bc7989.js" crossorigin="anonymous"></script>
 
 
 </body>
+
 </html>

@@ -1,64 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Link CDN Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!--Link CSS-->
     <link rel="stylesheet" href="../css/style.css">
-    <title>Informacion</title>
+    <title>Contacto</title>
+
+    <!--Link font-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    </style>
+
 </head>
 
 <body>
-    <h1 id="titulo">Contacto</h1>
 
-    <header class="header">
-        <nav class="menu">
-            <ul>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="../pages/galeria.html">Galeria de trabajos</a>
-                </li>
-                <li>
-                    <a href="../pages/info.html">Información</a>
-                </li>
-                <li>
-                    <a href="../pages/contacto.html">Contacto</a>
-                </li>
-                <li>
-                    <a href="../pages/ubicanos.html">Ubicanos</a>
-                </li>
-            </ul>
+    <header> <!--Comienzo barra de navegación-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand navbar-custom" href="#">
+                    <img src="../assets/logo.PNG" width="60px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/info.html">Informacion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/ubicanos.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                </div>
+                <!--Boton de busqueda-->
+                <form class="d-flex searchbutton">
+                    <input type="search" class="form-control me-3" placeholder="Buscar producto ...">
+                    <button type="button" class="btn btn-success">Buscar</button>
+                </form>
+
+            </div>
         </nav>
     </header>
 
-    <main class="consultas">
+    <!--<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<   Formulario de contacto-->
 
-    <div class="container_form">
-        <div class="info_form">
-            <h2>Dejanos tus dudas o cunsultas</h2>
-            <p>Rellena este formulario para consultar cualquier duda que tengas. Por favor, asegúrese de que la dirección de correo electrónico ingresada sea correcta. Si prefiere redactar su propio correo electrónico, envíelo a contacto@kancercustom.com (Esto sería útil si desea hablar sobre una imagen que tiene).</p>
-            <form action="#" autocomplete="off" class="formulario" >
-                <input type="text" name="nombre" placeholder="ingresa tu nombre" class="campo">
-                <input type="text" name="telefono" placeholder="ingresa tu telefono" class="campo">
-                <input type="email" name="email" placeholder="ingresa tu correo" class="campo">
-                <textarea name="mensaje" placeholder="ingresa tu mensaje"></textarea>
-                <input type="submit" name="enviar" value="enviar mensaje" class="enviar">
-            </form>
+    <div class="card contact-card">
+
+        <div class="mb-3">
+
+            <section class="mb-4">
+                <!--Section heading-->
+                <h2 class="h1-responsive font-weight-bold text-center my-4">Contactanos</h2>
+                <!--Section description-->
+                <p class="text-center w-responsive mx-auto mb-5">¿Tienes alguna pregunta? Por favor no dudes en
+                    contactarnos. nuestro equipo se pondra en contacto contigo en unas horas.
+                </p>
+
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-9 mb-md-0 mb-5">
+                        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                            <!--Grid row-->
+                            <div class="row">
+
+                                <!--Grid column-->
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="name" name="name" class="form-control">
+                                        <label for="name" class="">Escribe tu nombre</label>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                                <!--Grid column-->
+                                <div class="col-md-6">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="email" name="email" class="form-control">
+                                        <label for="email" class="">Escribe tu email</label>
+                                    </div>
+                                </div>
+                                <!--Grid column-->
+
+                            </div>
+                            <!--Grid row-->
+
+                            <!--Grid row-->
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="md-form mb-0">
+                                        <input type="text" id="subject" name="subject" class="form-control">
+                                        <label for="subject" class="">Dejanos tu mensaje</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Grid row-->
+
+                            <!--Grid row-->
+                            <div class="row">
+
+                                <!--Grid column-->
+                                <div class="col-md-12">
+
+                                    <div class="md-form">
+                                        <textarea type="text" id="message" name="message" rows="2"
+                                            class="form-control md-textarea"></textarea>
+                                        <label for="message">¡Pronto nos comunicaremos contigo!</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--Grid row-->
+
+                        </form>
+
+                        <div class="text-center text-md-left">
+                            <a class="btn btn-primary button-formulary"
+                                onclick="document.getElementById('contact-form').submit();">ENVIAR FORMULARIO</a>
+                        </div>
+                        <div class="status"></div>
+                    </div>
+
+                    <!--Grid column-->
+
+                    <div class="col-md-3 text-center contact-card-phone">
+
+                        <ul class="list-unstyled mb-0">
+                            <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                                <p class="card text">¡Visitanos en nuestra tienda! <br> Santiago centro, N°####</p>
+                            </li>
+                            <li><i class="fas fa-phone mt-2 fa-2x"></i>
+                                <p class="card text">+569-12345678</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+
+
+    </div>
+
+    </section>
+
+    <!--Red social icons -->
+    <div class="card text-center">
+        <div class="card-footer text-muted socialmedia">
+            <li class="nav-item">
+                <a target="_blank" href="https://www.facebook.com/kancer.custom/">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a target="_blank" href="https://www.instagram.com/kancer.custom/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a target="_blank" href="https://twitter.com/kancer_custom">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
         </div>
     </div>
 
-</main>
 
-    <footer class="footer">
-        <div class="contenedor">
-            <h3>¡SIGUENOS!</h3>
-            <a target="_blank" href="https://www.facebook.com/kancer.custom/">Facebook</a>
-            <a target="_blank" href="https://www.instagram.com/kancer.custom/">Instagram</a>
-            <a target="_blank" href="https://twitter.com/kancer_custom">Twitter</a>
-        </div>
-    </footer>
+    <!--Link de scrip de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <!--Link de scrip de font awesome-->
+    <script src="https://kit.fontawesome.com/4357bc7989.js" crossorigin="anonymous"></script>
+
+
 
 </body>
+
 </html>

@@ -1,10 +1,11 @@
 /*estilos globales*/
 
 :root {
-    --main-blue-color: #07398a; /*Deja un color predeterminado para llamarlo como propiedad (1)*/
+    --main-blue-color: #07398a;
+    /*Deja un color predeterminado para llamarlo como propiedad (1)*/
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -12,49 +13,52 @@
 }
 
 /*Fondo de color .index*/
-body{
-    font-family:sans-serif;
-    background-color: var(--main-blue-color); /*<<<<<<<<<<<<<<< Color (1)*/
+body {
+    font-family: sans-serif;
+    background-color: var(--main-blue-color);
+    /*Color (1)*/
 }
 
 /*Logo*/
-.navbar-custom{
+.navbar-custom {
     padding: 0;
 }
-    
 
-.socialmedia{
+
+.socialmedia {
     display: flex;
     justify-content: center;
     background: #07398a;
 
-    
+
 }
+
 /*estilos barra de navegación*/
-.container-fluid{
+.container-fluid {
     background-color: #07398a;
     height: 60px;
     width: 100%;
 }
 
-nav ul li a:hover{ 
+nav ul li a:hover {
     border-radius: 3px;
-    background-color:rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
 
 }
-nav ul li a{
-transition: .4s;
+
+nav ul li a {
+    transition: .4s;
 }
 
-.nav-link{
+.nav-link {
     font-size: 20px;
     color: rgb(255, 255, 255);
 }
 
 /*Botones de menu desplegable*/
 .nav-item {
-    margin-left:20px;
-    font-size: 18px;   
+    margin-left: 20px;
+    font-size: 18px;
 }
 
 /*Botones redes sociales*/
@@ -64,13 +68,13 @@ i {
 }
 
 /*Propiedades de video*/
-div iframe{
+div iframe {
     padding: 20px;
 }
 
 /*Barra de navegación*/
 
-@media screen and (max-width: 991px){
+@media screen and (max-width: 991px) {
     .navbar-collapse {
         background: rgb(0, 0, 0);
         width: 100%;
@@ -78,45 +82,95 @@ div iframe{
     }
 }
 
-@media screen and (max-width: 450px){
-    .searchbutton{
+@media screen and (max-width: 450px) {
+    .searchbutton {
         display: none !important;
     }
 }
 
 /*Pie de pagina*/
-.card-header{
+
+.card-header {
     font-size: 25px;
     background-color: #ffffff;
 }
 
-.footer-card{
+.footer-card {
     font-size: 25px;
     background-color: var(--main-blue-color);
-    
+
 }
 
-.button-contact{
+.button-contact {
     font-size: 30px;
 }
 
-.question-text{
-font-size: 30px;
-color: #fff;
+.question-text {
+    font-size: 30px;
+    color: #fff;
 }
+
+/*Tarjetas de presentacion*/
+
+.gamecube {
+    color: #ffffff;
+}
+
+/*Tarjetas de servicios*/
+.card-text {
+    color: var(--main-blue-color);
+    font-size: 20px;
+
+}
+
+.card-container {
+    background-color: #ffffff;
+
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<CSS HTML CONTACTO*/
+
+@media screen and (min-width: 1250px) {
+    .contact-card {
+        font-size: 20px;
+        padding-top: 10px;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+}
+
+@media screen and (max-width: 1249px) {
+    .contact-card {
+        font-size: 20px;
+        padding-top:10px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+/*Boton de formulario*/
+
+.button-formulary{
+    font-size: 20px;
+    margin: 20px;
+}
+
+.contact-card-phone{
+    background-color: #07398a;
+    padding: 25px;
+}
+
+
 
 /*arreglar lo de abajo*/
 
-
-
-.footer{
+.footer {
     text-align: center;
-    padding:20px;
-    background-color:cyan
-
+    padding: 20px;
+    background-color: cyan
 }
 
-.menu ul{
+.menu ul {
     margin: 0;
     list-style: none;
     padding: 0;
@@ -141,14 +195,14 @@ color: #fff;
 
 #titulo {
     background-color: #F3EFE0;
-    color:blue;
+    color: blue;
     border-radius: 5px;
     border-width: 5px;
     text-align: center;
 }
 
 .titulo1 {
-    text-align: center; 
+    text-align: center;
 }
 
 .siguenos {
@@ -159,7 +213,7 @@ color: #fff;
 .caja {
     border: 1px solid #222222;
     background-color: #F3EFE0;
-    color:black;
+    color: black;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     width: 450px;
@@ -170,10 +224,10 @@ color: #fff;
 
 .flexbox {
     border: black;
-    background-color:#ccc;
+    background-color: #ccc;
     padding: 20px;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -191,10 +245,10 @@ color: #fff;
 
 .flexbox2 {
     border: black;
-    background-color:#ccc;
+    background-color: #ccc;
     padding: 20px;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     margin: 25px;
@@ -206,26 +260,27 @@ color: #fff;
 
 /*Pagina de cotacto*/
 
-.container_form{
+.container_form {
     width: 100%;
     max-width: 1100px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     margin-top: 90px;
 }
 
-.formulario{
+.formulario {
     padding: 25px;
     padding-left: 0;
 }
 
-.container_form h2{
+.container_form h2 {
     font-size: 25px;
     margin-bottom: 20px;
 }
 
-.campo, textarea {
+.campo,
+textarea {
     padding: 15px 10 px;
     font-size: 15px;
     display: inline-block;
@@ -237,35 +292,20 @@ color: #fff;
     color: #222222;
 }
 
-.enviar{
+.enviar {
     padding: 15px;
     font-size: 16px;
-    background-color:#434242;
+    background-color: #434242;
     border-radius: 5px;
     cursor: pointer;
     color: #fff;
 }
 
-.mapa{
+.mapa {
     text-align: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.textoubicacion{
+    font-size: 20px;
+    color: #ffffff;
+}
