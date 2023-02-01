@@ -1,0 +1,36 @@
+
+@import "./base/vars";
+@import "./base/reset";
+@import "./layout/index";
+
+/*<<<<<<<<<<<<<<<<<<<<<CSS HTML CONTACTO*/
+
+@media screen and (min-width: 1250px) {
+    .contact-card {
+        font-size: 20px;
+        padding-top: 10px;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+}
+
+@media screen and (max-width: 1249px) {
+    .contact-card {
+        font-size: 20px;
+        padding-top:10px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+/*Boton de formulario*/
+
+.button-formulary{
+    font-size: 20px;
+    margin: 20px;
+}
+
+.contact-card-phone{
+    background-color: #07398a;
+    padding: 25px;
+}

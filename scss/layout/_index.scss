@@ -1,0 +1,105 @@
+/*Fondo de color .index*/
+body {  
+    background-color:$blue-color
+}
+
+//Tarjetas de presentación
+.card-container{
+    padding-left: 50px;
+    background-color: $blue-color;
+
+    h3 {
+        color:$white-color;
+        font-size: 40px;
+        &:hover{
+            color:aqua;
+        }
+    }
+    .card-text{
+        color: $white-color;
+        font-size: 20px;
+    }
+}
+
+/*estilos barra de navegación*/
+.container-fluid {
+    background-color: #07398a;
+    height: 60px;
+    width: 100%;
+}
+
+nav ul li a:hover {
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+
+}
+
+nav ul li a {
+    transition: .4s;
+}
+
+.nav-link {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+/*Botones de menu desplegable*/
+.nav-item {
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+/*Botones redes sociales*/
+i {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+/*Propiedades de video*/
+div iframe {
+    padding: 20px;
+}
+
+/*Barra de navegación*/
+
+@media screen and (max-width: 991px) {
+    .navbar-collapse {
+        background: rgb(0, 0, 0);
+        width: 100%;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .searchbutton {
+        display: none !important;
+    }
+}
+
+/*Pie de pagina*/
+
+.card-header {
+    font-size: 25px;
+    background-color: #ffffff;
+}
+
+.footer-card {
+    font-size: 25px;
+    background-color: var(--main-blue-color);
+
+}
+
+.button-contact {
+    font-size: 30px;
+}
+
+.question-text {
+    font-size: 30px;
+    color: #fff;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    background: #07398a;
+}
