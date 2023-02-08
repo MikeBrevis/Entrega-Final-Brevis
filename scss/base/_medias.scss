@@ -1,0 +1,62 @@
+//CSS HTML CONTACTO
+@media screen and (min-width: 1250px) {
+    .contact-card {
+        font-size: 20px;
+        padding-top: 10px;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+}
+
+@media screen and (max-width: 1249px) {
+    .contact-card {
+        font-size: 20px;
+        padding-top: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+//Barra de navegación
+@media screen and (max-width: 991px) {
+    .navbar-collapse {
+        background: rgb(0, 0, 0);
+        width: 100%;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .searchbutton {
+        display: none !important;
+    }
+}
+
+//Galeria de imagenes
+
+@media screen and (max-width:1000px) {
+    .contenedor-imagenes {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .contenedor-imagenes {
+        width: 90%;
+    }
+
+    .contenedor-imagenes .imagen {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .contenedor-imagenes {
+        width: 98%;
+    }
+
+    .contenedor-imagenes .imagen {
+        width: 80%;
+    }
+}
+

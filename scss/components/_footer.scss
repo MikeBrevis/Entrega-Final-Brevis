@@ -1,0 +1,38 @@
+/*Pie de pagina*/
+
+.card-header {
+    background-color: $white-color;
+    color: $blue-color;
+    font-size: 35px;
+    margin:0;
+    box-sizing: border-box;
+
+}
+
+.footer-card {
+    font-size: 50px;
+    background-color:$blue-color;
+}
+
+.button-contact {
+    font-size: 30px;
+    color: $white-color;
+}
+
+.question-text {
+    font-size: 30px;
+    color: $white-color;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    background: #07398a;
+}
+
+/*Botones redes sociales*/
+i {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+

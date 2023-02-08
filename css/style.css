@@ -6,21 +6,75 @@
   list-style: none;
   font-family: 'Bebas Neue', cursive; }
 
-/*Fondo de color .index*/
-body {
-  background-color: #105edb; }
+@media screen and (min-width: 1250px) {
+  .contact-card {
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 200px;
+    padding-right: 200px; } }
 
-.card-container {
-  padding-left: 50px;
-  background-color: #105edb; }
-  .card-container h3 {
-    color: #ffffff;
-    font-size: 40px; }
-    .card-container h3:hover {
-      color: aqua; }
-  .card-container .card-text {
-    color: #ffffff;
-    font-size: 20px; }
+@media screen and (max-width: 1249px) {
+  .contact-card {
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px; } }
+
+@media screen and (max-width: 991px) {
+  .navbar-collapse {
+    background: black;
+    width: 100%;
+    z-index: 1; } }
+
+@media screen and (max-width: 450px) {
+  .searchbutton {
+    display: none !important; } }
+
+@media screen and (max-width: 1000px) {
+  .contenedor-imagenes {
+    width: 60%; } }
+
+@media screen and (max-width: 700px) {
+  .contenedor-imagenes {
+    width: 90%; }
+  .contenedor-imagenes .imagen {
+    width: 48%; } }
+
+@media screen and (max-width: 450px) {
+  .contenedor-imagenes {
+    width: 98%; }
+  .contenedor-imagenes .imagen {
+    width: 80%; } }
+
+/*Pie de pagina*/
+.card-header {
+  background-color: #ffffff;
+  color: #0c52c3;
+  font-size: 35px;
+  margin: 0;
+  box-sizing: border-box; }
+
+.footer-card {
+  font-size: 50px;
+  background-color: #0c52c3; }
+
+.button-contact {
+  font-size: 30px;
+  color: #ffffff; }
+
+.question-text {
+  font-size: 30px;
+  color: #ffffff; }
+
+.socialmedia {
+  display: flex;
+  justify-content: center;
+  background: #07398a; }
+
+/*Botones redes sociales*/
+i {
+  color: white;
+  font-size: 30px; }
 
 /*estilos barra de navegación*/
 .container-fluid {
@@ -44,61 +98,71 @@ nav ul li a {
   margin-left: 20px;
   font-size: 18px; }
 
-/*Botones redes sociales*/
-i {
-  color: white;
-  font-size: 30px; }
+/*Fondo de color .index*/
+body {
+  background-color: #0c52c3; }
+
+.card-container {
+  padding-left: 50px;
+  background-color: #ffffff; }
+  .card-container .card-text {
+    color: #0c52c3;
+    font-size: 20px; }
 
 /*Propiedades de video*/
 div iframe {
   padding: 20px; }
 
-/*Barra de navegación*/
-@media screen and (max-width: 991px) {
-  .navbar-collapse {
-    background: black;
-    width: 100%;
-    z-index: 1; } }
-
-@media screen and (max-width: 450px) {
-  .searchbutton {
-    display: none !important; } }
-
-/*Pie de pagina*/
-.card-header {
-  font-size: 25px;
-  background-color: #ffffff; }
-
-.footer-card {
-  font-size: 25px;
-  background-color: var(--main-blue-color); }
-
-.button-contact {
+.galeria h1 {
+  text-align: center;
+  margin: 15px 0 15px 0;
+  font-style: oblique;
+  color: #ffffff;
   font-size: 30px; }
 
-.question-text {
+.galeria .linea {
+  border-top: 8px solid #ffffff;
+  margin-bottom: 20px; }
+
+.galeria .contenedor-imagenes {
+  display: grid;
+  width: 80%;
+  margin: auto;
+  justify-content: space-around;
+  border-radius: 5px; }
+
+.galeria .imagen {
+  position: relative;
+  height: 750px;
+  margin-bottom: 15px;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75); }
+  .galeria .imagen:hover .overlay {
+    height: 100%;
+    cursor: pointer; }
+
+.galeria .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 118, 192, 0.7);
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  transition: 1s ease; }
+
+.galeria img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.galeria h2 {
+  color: #ffffff;
   font-size: 30px;
-  color: #fff; }
-
-.socialmedia {
-  display: flex;
-  justify-content: center;
-  background: #07398a; }
-
-/*<<<<<<<<<<<<<<<<<<<<<CSS HTML CONTACTO*/
-@media screen and (min-width: 1250px) {
-  .contact-card {
-    font-size: 20px;
-    padding-top: 10px;
-    padding-left: 200px;
-    padding-right: 200px; } }
-
-@media screen and (max-width: 1249px) {
-  .contact-card {
-    font-size: 20px;
-    padding-top: 10px;
-    padding-left: 30px;
-    padding-right: 30px; } }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%); }
 
 /*Boton de formulario*/
 .button-formulary {
@@ -108,3 +172,26 @@ div iframe {
 .contact-card-phone {
   background-color: #07398a;
   padding: 25px; }
+
+.containerinfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 320px; }
+
+.imagenes {
+  width: 33%;
+  height: 100%; }
+
+.textoubicacion {
+  margin: 20px;
+  font-size: 35px;
+  text-align: center;
+  color: #ffffff; }
+
+h3 {
+  font-size: 20px; }
+
+.ubication {
+  text-align: center; }

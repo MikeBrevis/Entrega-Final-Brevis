@@ -1,36 +1,21 @@
-
-@import "./base/vars";
+//import de base
 @import "./base/reset";
-@import "./layout/index";
+@import "./base/vars";
+@import "./base/mixin";
+@import "./base/medias";
 
-/*<<<<<<<<<<<<<<<<<<<<<CSS HTML CONTACTO*/
 
-@media screen and (min-width: 1250px) {
-    .contact-card {
-        font-size: 20px;
-        padding-top: 10px;
-        padding-left: 200px;
-        padding-right: 200px;
-    }
-}
+//import de componentes
+@import "./components/btn";
+@import "./components/footer";
+@import "./components/header";
 
-@media screen and (max-width: 1249px) {
-    .contact-card {
-        font-size: 20px;
-        padding-top:10px;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-}
 
-/*Boton de formulario*/
+//import de layout
+@import"./layout/index";
+@import "./layout/galery";
+@import "./layout/contact";
+@import "./layout/info";
+@import "./layout/find";
 
-.button-formulary{
-    font-size: 20px;
-    margin: 20px;
-}
 
-.contact-card-phone{
-    background-color: #07398a;
-    padding: 25px;
-}
