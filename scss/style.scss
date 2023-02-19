@@ -1,15 +1,14 @@
 //import de base
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import "./base/reset";
 @import "./base/vars";
 @import "./base/mixin";
 @import "./base/medias";
 
-
 //import de componentes
 @import "./components/btn";
 @import "./components/footer";
 @import "./components/header";
-
 
 //import de layout
 @import"./layout/index";

@@ -32,31 +32,3 @@
     }
 }
 
-//Galeria de imagenes
-
-@media screen and (max-width:1000px) {
-    .contenedor-imagenes {
-        width: 60%;
-    }
-}
-
-@media screen and (max-width:700px) {
-    .contenedor-imagenes {
-        width: 90%;
-    }
-
-    .contenedor-imagenes .imagen {
-        width: 48%;
-    }
-}
-
-@media screen and (max-width:450px) {
-    .contenedor-imagenes {
-        width: 98%;
-    }
-
-    .contenedor-imagenes .imagen {
-        width: 80%;
-    }
-}
-

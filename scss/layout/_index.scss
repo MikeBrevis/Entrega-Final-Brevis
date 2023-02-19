@@ -1,14 +1,14 @@
 /*Fondo de color .index*/
-body {  
-    background-color:$blue-color
+body {
+    background-color: $blue-color
 }
 
 //Tarjetas de presentación
-.card-container{
+.card-container {
     padding-left: 50px;
     background-color: $white-color;
 
-    .card-text{
+    .card-text {
         color: $blue-color;
         font-size: 20px;
     }
@@ -17,7 +17,92 @@ body {
 /*Propiedades de video*/
 div iframe {
     padding: 20px;
+    
 }
 
+/*Propiedades de tarjetas*/
 
+.containercard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 25px;
+}
+
+.tarjeta {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.tarjeta{
+
+    border-radius: 10px;
+
+&:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+}
+
+.imagen {
+    height: 250px;
+    overflow: hidden;
+}
+
+.imagen img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contenido {
+    padding: 20px;
+
+    h3 {
+        font-size: 30px;
+        text-align: center;
+        color: $blue-color;
+    }
+
+}
+
+.descriptioncard{
+    background-color: $blue-color;
+    border-radius: 5px;
+    p {
+        font-size: 17.5px;
+        text-align: center;
+        color: $white-color;
+    }
+}
+
+.animatetittle {
+    background: linear-gradient(to right, #0077cc, #00c9ff);
+    -webkit-background-clip: text;
+    animation: cambia-color 2s linear infinite;
+}
+
+@keyframes cambia-color {
+    0% {
+        background: linear-gradient(to right, #0077cc, #00c9ff);
+    }
+
+    50% {
+        background: linear-gradient(to right, #00c9ff, #00ff8c);
+    }
+
+    100% {
+        background: linear-gradient(to right, #00ff8c, #ffcc00);
+    }
+}
+
+.gamecube{
+    color: $white-color;
+}
 

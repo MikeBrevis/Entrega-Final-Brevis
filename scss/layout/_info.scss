@@ -1,12 +1,95 @@
-.containerinfo {
+//Texto informativo
+
+.box {
+    margin: 15px;
+    background-color: $white-color;
+    border-radius: 5px;
+
+    h2 {
+        text-align: center;
+        font-size: 35px;
+        color: $blue-color;
+    }
+
+    p {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        font-size: 18px;
+    }
+}
+
+.price {
+    text-align: center;
+    color: $white-color;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    h3 {
+        font-size: 25px;
+
+    }
+}
+
+
+//Imagenes de precios
+
+.image-row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    height: 320px;
+    flex-wrap: wrap;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+
+    img {
+        width: 30%;
+        margin-bottom: 1rem;
+    }
 }
 
-.imagenes {
-    width: 33%;
-    height: 100%;
+@media screen and (max-width: 768px) {
+    .image-row img {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .image-row img {
+        width: 100%;
+    }
+}
+
+.imginfo {
+    border-radius: 10px;
+}
+
+//servicio tecnico
+.accordion {
+    padding: 20px;
+
+}
+
+.accordion-button {
+    font-size: 25px;
+    text-align: center;
+    color: $blue-color;
+}
+
+.litext {
+    font-size: 25px;
+}
+
+.accordion-body {
+    font-size: 25px;
+
+}
+
+button.accordion-button {
+    margin: 10px;
+}
+
+.accordion-header{
+    margin: 10px;
 }
