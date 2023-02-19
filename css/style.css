@@ -63,8 +63,8 @@ i {
 
 /*estilos barra de navegación*/
 .container-fluid {
-  background-color: #07398a;
-  height: 60px;
+  background-color: #0c52c3;
+  height: 70px;
   width: 100%; }
 
 nav ul li a:hover {
